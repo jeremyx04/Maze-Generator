@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Maze Generator
+    </title>
+    <link rel = 'stylesheet' href = 'css/style.css'>
+</head>
+<body>
+    <header class = "header"> Cool Maze :D  </header>
+    <br>
+    <form id = "form"> 
+        <label for="x">X:</label>
+        <input type = "number" id = "x" name="x" min="1" max="100" value="10">
+        <label for="y">Y:</label>
+        <input type = "number" id = "y" name="y" min="1" max="100" value="10">
+        <label for="delay">Delay:</label>
+        <input type = "number" id = "delay" name="delay" min="0" max="50" value="1">
+    </form>
+    <br>
+    <button class = "button" onclick = "initMaze()"> Generate Maze </button>
+    <div id = "start"> Start </div>
+    <canvas id = 'canvas' width = '1800' height = '960'style = 'border:1px solid #000000;'></canvas>
+    <script src = 'js/Graph.js'> </script>
+    <script src = 'js/kruskal.js'> </script> 
+    <script src = 'js/app.js'> </script>
+    <div id = "end"> End </div>"
+</body>
+</html>

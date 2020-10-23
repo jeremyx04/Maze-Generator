@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); 
+.header{
+    padding:30px;
+    text-align:center;
+    font-family: 'Bitter', serif;
+    font-size:45px;
+    background: rgb(6,158,92);
+    background: linear-gradient(90deg, rgba(6,158,92,1) 19%, rgba(149,231,97,1) 49%, rgba(97,223,231,1) 78%);
+    width:1200px;
+    margin:auto;
+    border-radius:20px;
+}
+
+canvas{
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:25px;
+    display:block;
+    top:50%;
+    transform:translate(0.-50%);
+}
+
+.button{
+    width: 800px;
+    height: 45px;
+    background-color: pink;
+    border-radius:20px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+}
+
+.button:hover{
+    background-color:aliceblue;
+    border-radius:30px;
+}
+
+input{
+    font-family:'PT Sans',sans-serif;
+    text-align:center;
+}
+
+input[type=number]{
+    font-family: 'PT Sans',sans-serif;
+    background-color: #dfe4ea;
+    font-size:15px;
+}
+
+#form{
+    margin-left:800px;
+}
+
+#start{
+    margin-top:20px;
+    margin-left:45px;
+    font-family: 'Krona One', sans-serif;
+    font-size:25px;
+}
+
+#end{
+    margin-top:15px;
+    margin-left:1780px;
+    font-family: 'Krona One', sans-serif;
+    font-size:25px;
+}
