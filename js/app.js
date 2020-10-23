@@ -20,9 +20,9 @@ const initMaze = () => {
     let y = document.getElementById("y").value;
     let delay = document.getElementById("delay").value;
     let maze = new Graph();
-    const dx = 1800/y;
-    const dy = 960/x;
-    //canvas width = 1800, height = 960 
+    const dx = canvas.width/y;
+    const dy = canvas.height/x;
+    //canvas width = 1800, height = 760 
     for(let i = 0; i < x-1; i++){
         for(let j = 0; j < y; j++){
             let w = Math.floor(Math.random()*(x*y*10));
