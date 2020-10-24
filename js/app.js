@@ -28,7 +28,7 @@ const initMaze = () => {
     dy = canvas.height/x;
     let delay = document.getElementById("delay").value;
     maze = new Graph(x,y);
-    //canvas width = 1800, height = 760 
+    //canvas width = 1800, height = 700
     for(let i = 0; i < x-1; i++){
         for(let j = 0; j < y; j++){
             let w = Math.floor(Math.random()*(x*y*10));
