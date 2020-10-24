@@ -6,8 +6,8 @@
     text-align:center;
     font-family: 'Bitter', serif;
     font-size:45px;
-    background: rgb(6,158,92);
-    background: linear-gradient(90deg, rgba(6,158,92,1) 19%, rgba(149,231,97,1) 49%, rgba(97,223,231,1) 78%);
+    background: rgb(147,255,221);
+    background: linear-gradient(90deg, rgba(147,255,221,1) 15%, rgba(199,204,196,1) 50%, rgba(152,236,241,1) 85%);
     width:1200px;
     margin:auto;
     border-radius:20px;
