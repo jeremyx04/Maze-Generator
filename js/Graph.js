@@ -10,8 +10,14 @@ class Edge{
     }
 }
 class Graph{
-    constructor(){
+    constructor(x,y){
+        this.x=x;
+        this.y=y;
         this.Edges = [] 
+        this.adjList = new Map();
+        for(let i = 0; i < x; i++)
+            for(let j = 0; j < y; j++)
+                this.adjList.set(i*y+j+1,[]);
     }
     addEdge(node1,node2,weight,x1,y1,x2,y2){
         this.Edges.push(new Edge(node1,node2,weight,x1,y1,x2,y2));

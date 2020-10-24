@@ -26,7 +26,7 @@ const initDS = n => {
         rank[i] = 1;
     }
 }
-const Kruskal = (x,y,maze) => {
+const Kruskal = (x,y) => {
     initDS(x*y);
     let mst = [];
     maze.Edges.sort((edge1,edge2) => (edge1.weight>edge2.weight) ? 1:-1);
@@ -34,6 +34,8 @@ const Kruskal = (x,y,maze) => {
         let currEdge = maze.Edges[i];
         if(find(currEdge.child)!=find(currEdge.parent)){
             union(currEdge.child,currEdge.parent);
+            maze.adjList.get(currEdge.child).push(currEdge.parent);
+            maze.adjList.get(currEdge.parent).push(currEdge.child);
         }
         else    
             mst.push(currEdge);
